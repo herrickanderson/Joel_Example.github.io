@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <script>
     function initMap() {
-      var location = {lat: 37.7749, lng: -122.4194};
+      var location = {lat: -12.0435651, lng: -77.0471507};      
       var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 8,
-        center: location
+
+        zoom: 15,
+          center: location
       });
+      var marker=new google.maps.marker({position:location,map:map})
     }
   </script>
   <script async defer
@@ -162,11 +164,11 @@
         <div class="page-section Ubicanos" id="Ubicanos">
             <div class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Ubicanos en mapa</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">UBICANOS</h2>
+                
             
                 <div class="row">
                     <div id="map"></div>
-
                 </div>
                 <!-- About Section Button-->
                 
